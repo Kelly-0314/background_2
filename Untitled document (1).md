@@ -1,0 +1,41 @@
+## Research Question
+
+How does the El Nino-Southern Oscillation (ENSO), and the strength of El Nino events in particular, relate to winter precipitation and the following summer's heat in California, and does this relationship differ from north to south? We use daily GHCN observation from five stations spanning California from north to south( 'San Francisco', 'Sacramento','Fresno', 'Los Angeles', 'San Diego') for winter 1950 to 2024 specifically.
+
+* (1) Compared to neutral and La Niña years, is the total winter (December–February) precipitation in El Niño years higher, especially strong El Nino winters, and are the number of extreme precipitation days (days exceeding the station's historical 95th percentile of wet-day precipitation) higher?  
+* (2) After removing the long term warming trend, is the summer (June–August) after El Niño winters hotter—with higher average daily maximum temperatures and more extreme heat days (days whose daily maximum temperature exceeds the station's historical 95th percentile of summer daily maximum temperatures)?
+
+We will answer these questions using statistical inference: dividing winters into El Niño, neutral, and La Niña phases according to the December–February Relative Oceanic Niño Index (RONI), then comparing the means and extreme-day counts of each group, and testing their correlation with winter RONI.
+
+*Update since the proposal*
+
+1. changed the winter window from "December to January" to the standard December–February (DJF) season, so that it lines up with NOAA's DJF RONI value  
+2. define the extreme-day thresholds precisely  
+3. specified the study period and the five airport stations  
+4. added El Nino strength and north-south differences  
+5. adding removing the long term warming trend
+
+## Hypothesis
+
+We hypothesize that the effect of ENSO on California's winter precipitation depends on El Niño strength and varies by region. During strong El Niño winters, the Pacific jet stream tends to shift southward toward California, steering more storms and atmospheric rivers into the state. We therefore expect strong El Niño winters to have higher December–February total precipitation and more extreme precipitation days than neutral and La Niña winters, while weak and moderate El Niño winters will show little or no difference from neutral winters. Because this storm-track shift mainly affects the southern part of the state, we expect the effect to be strongest at the southern stations and weaker or inconsistent at the northern stations.
+
+For the following summer (June–August), we expect a much weaker relationship. Unlike winter precipitation, there is no well-established mechanism linking the previous winter's El Niño to California summer heat, and part of any apparent link may reflect long-term warming rather than ENSO. After removing the long-term trend, we therefore expect at most a small positive association between winter RONI and summer mean daily maximum temperature and extreme heat days, and we treat this part of the analysis as exploratory.
+
+In terms of our tests, we expect winter RONI to be positively associated with winter precipitation outcomes, driven mainly by strong El Niño years and the southern stations, and we expect the association between winter RONI and detrended summer heat outcomes to be weak or not statistically significant.
+
+Background  
+In California, the weather is relatively dry and its humidity, water resources and agricultural water use highly depend on the precipitation in winter. And California is also known for its summer heat and wildfires. As can be seen, the climate has a direct impact on California's society, it makes people pay more attention to the climate phenomenon in California. Moreover, the El Niño–Southern Oscillation (ENSO) is a climate phenomenon which usually impacts California if it happens. This motivated us to study the impact of ENSO on California's climate.  
+About the El Niño–Southern Oscillation (ENSO), it is a kind of cyclical climate pattern which includes El Niño, La Niña and Neutral. From the report of NOAA Physical Sciences Laboratory, the El Niño makes California (especially Southern California) wetter through the storm, and the La Niña, which is the later climate phenomenon, makes California drier \[1\]. According to the prior research about the water resources of California \[2\], California's climate is usually dry, and the phenomenon of extreme precipitation is usually caused by atmospheric rivers. Through this research, we can tentatively conclude that the El Niño may cause the extreme precipitation in California. According to the research from Gershunov et al. (2009), the extreme heat in California during the summer is primarily driven by a mid-tropospheric high-pressure ridge, while sea surface temperatures (SST) in the equatorial Pacific, which serve as an ENSO indicator, did not exhibit significant tropical coupling at that time \[6\]. This directly demonstrates that the immediate dynamic cause of California’s summer heat lies in the high-pressure system, rather than in the ENSO conditions of the previous winter.  
+Furthermore, the prior research about the relationship between California's precipitation and the El Niño \[3\] illustrates that a weak or moderate El Niño is unlikely to significantly alter the risk of drier-than-normal or wetter-than-normal conditions in northern and central California, and the probability of heavy rainfall in Southern California rises only slightly during a moderate El Niño event. Under conditions of a strong El Niño event, the probability of rain will increase significantly throughout California \[3\]. Some people think that the El Niño usually brings heavy rain in California, but this prior research proves that there are fundamental differences in precipitation responses between moderate-to-weak El Niño events and strong El Niño events. Complementing this, Jong et al. (2016) claimed that changes in atmospheric circulation during ENSO primarily affect Southern California, resulting in significant regional variations in precipitation patterns from north to south \[5\].Therefore, our group decided to classify data according to the Relative Oceanic Niño Index (RONI) and compare the mean and the number of days with extreme values.
+
+About the constraints and confounding variables, we found that anthropogenic forcing may impact our research result. From the prior research of Swain \[4\], global warming driven by human activities will cause the frequency of extreme precipitation to increase. It illustrates that the weather of California is highly volatile, and the trend of global warming is also a confounding variable which we should not ignore. Hence, we should detrend the confounding variable of warming trend. 
+
+### References
+
+1. El Niño Southern Oscillation (ENSO). NOAA Physical Sciences Laboratory. [https\://psl.noaa.gov/enso/](https://psl.noaa.gov/enso/)   
+2. Dettinger, M. D., Ralph, F. M., Das, T., Neiman, P. J., & Cayan, D. R. (2011). Atmospheric Rivers, Floods and the Water Resources of California. *Water*, 3(2), 445–478. [https\://www\.mdpi.com/2073-4441/3/2/445](https://www.mdpi.com/2073-4441/3/2/445)   
+3. Hoell, A., Hoerling, M., Eischeid, J., Wolter, K., Dole, R., Perlwitz, J., Xu, T., & Cheng, L. (2016). Does El Niño intensity matter for California precipitation? *Geophysical Research Letters*, 43, 819–825. [https\://doi.org/10.1002/2015GL067102](https://doi.org/10.1002/2015GL067102)   
+4. Swain, D. L., Langenbrunner, B., Neelin, J. D., & Hall, A. (2018). Increasing precipitation volatility in twenty-first-century California. *Nature Climate Change*, 8, 427–433. [https\://doi.org/10.1038/s41558-018-0140-y](https://doi.org/10.1038/s41558-018-0140-y)   
+5. Jong, Bor-Ting ; Ting, Mingfang ; Seager, Richard (2016). El Niño's impact on California precipitation: seasonality, regionality, and El Niño intensity. [https\://repository.library.noaa.gov/view/noaa/26080](https://repository.library.noaa.gov/view/noaa/26080).    
+6. Gershunov, A., Cayan, D. R., & Iacobellis, S. F. (2009). The Great 2006 Heat Wave over California and Nevada: Signal of an Increasing Trend. Journal of Climate, 22(23), 6181–6203. [https\://doi.org/10.1175/2009JCLI2465.1](https://doi.org/10.1175/2009JCLI2465.1) 
+
